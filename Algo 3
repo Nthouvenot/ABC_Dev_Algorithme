@@ -1,0 +1,15 @@
+Entier annexe
+Départ
+Lire annee
+Si annee/4 est un nombre entier
+Alors 
+	Si annee/100 est un nombre entier AND annee/400 NOT un nombre entier
+	Alors
+	Ecrire "Bisextile"
+	Sinon
+	Ecrire "Non bisextile"
+	Fin si
+Sinon
+Ecrire "Non bisextile"
+Fin si
+Fin
