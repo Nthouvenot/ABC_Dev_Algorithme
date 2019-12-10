@@ -2,7 +2,7 @@ Entier x,y
 Reel R
 Caractére refaire
 Départ
-Début tant que
+Faire
 	Ecrire "Entrer le premier nombre ?"
 	Lire x
 	Ecrire "Entrer le deuxiéme nombre"
@@ -11,5 +11,5 @@ Début tant que
 	Ecrire "La moyenne du premier nombre", x, "et du deuxiéme nombre", y, "et de", R
 	Ecrire "Voulez vous faire un autre calcul (O/N?"
 	Lire refaire
-Tant que refaire ne vaut pas 'N'
+Jusqua refaire ne vaut pas 'N'
 Fin
