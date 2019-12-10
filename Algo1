@@ -1,0 +1,10 @@
+Entier x,y
+Reel R
+Départ
+Ecrire "Entrer le premier nombre ?"
+Lire x
+Ecrire "Entrer le deuxieme nombre ?"
+Lire y
+R <-- (x+y)/2
+Ecrire "La moyenne du premier nombre", x, "et du deuxieme nombre", y "est de", R
+Fin
