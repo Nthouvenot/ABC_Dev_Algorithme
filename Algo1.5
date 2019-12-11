@@ -9,9 +9,9 @@ Ecrire "Entrez le nombre d'année de placement"
 Lire nbr_annee
 resultat <-- somme*(1+nbr_annee*interet) // Calcul intéret simple
 Ecrire "Résultat avec intéret simple : ", resultat
-nbr_anneex=1
+resultat_i <-- (1+interet)
 Pour i allant de 1 a nbr_annee par pas de 1				//
-resultat_i <-- (1+i)*(1+i)								Calcul intéret composé
+resultat_i <-- resultat_i*(1+interet)					Calcul intéret composé
 Fin pour
 resultat <-- somme * resultat_i							//
 Ecrire "Résultat avec intéret composé :", resultat
