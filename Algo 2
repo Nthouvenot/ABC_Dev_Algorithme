@@ -11,5 +11,5 @@ Faire
 	Ecrire "La moyenne du premier nombre", x, "et du deuxiéme nombre", y, "et de", R
 	Ecrire "Voulez vous faire un autre calcul (O/N?"
 	Lire refaire
-Jusqua refaire ne vaut pas 'N'
+Jusqua refaire vaut 'N'
 Fin

@@ -1,0 +1,11 @@
+Reel nombre
+Reel R
+Reel R2
+Départ
+Ecrire "Saisissez un nombre"
+Lire nombre
+R <-- (4*3.14116)*R exp 2
+R2 <-- ((4*3.14116)*R exp 3))/3
+Ecrire "l'aire d'un cercle de", nombre, "est de ", R
+Ecrire "le volume d'un cercle de", nombre, "est de ", R2
+Fin
