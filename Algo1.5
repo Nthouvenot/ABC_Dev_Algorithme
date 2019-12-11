@@ -1,4 +1,4 @@
-﻿Reel somme, interet, resultat
+﻿Reel somme, interet, resultat, resultat_i
 Entier nbr_annee
 Début
 Ecrire "Entrez la somme placé sur le compte"
@@ -7,11 +7,12 @@ Ecrire "Entrez l'intêret offert par la banque"
 Lire interet
 Ecrire "Entrez le nombre d'année de placement"
 Lire nbr_annee
-resultat <-- somme(1+nbr_annee*interet) // Calcul intéret simple
+resultat <-- somme*(1+nbr_annee*interet) // Calcul intéret simple
 Ecrire "Résultat avec intéret simple : ", resultat
+nbr_anneex=1
 Pour i allant de 1 a nbr_annee par pas de 1				//
-resultat <-- resultat*resultat							Calcul intéret composé
+resultat_i <-- (1+i)*(1+i)								Calcul intéret composé
 Fin pour
-resultat <-- somme(1+interet) * nbr_annee				//
+resultat <-- somme * resultat_i							//
 Ecrire "Résultat avec intéret composé :", resultat
 Fin
