@@ -1,0 +1,18 @@
+Départ
+Caractere answer
+Entier nbr, somme, count
+Reel result
+count <-- 0
+somme <-- 0
+answer <-- 0
+tant que answer = 'O'
+Ecrire "Saisir un nombre"
+Lire nbr
+somme <-- somme + nbr
+count <-- count+1
+Ecrire "Voulez vous saisir un autre nombre ? (O/N)"
+Lire answer
+Fin tant que
+result <-- somme/count
+Ecrire "Moyenne =", result
+Fin

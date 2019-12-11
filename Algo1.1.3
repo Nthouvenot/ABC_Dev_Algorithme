@@ -1,0 +1,22 @@
+Reel x,y,nombre,r
+Caractere choix
+Départ
+Ecrire "Saisissez un nombre "
+Lire x
+Ecrire "Saisissez un deuxiéme nombre"
+Lire y
+r <-- (x+y)/2
+Faire
+Ecrire "Rajouter un nombre ? (O/N)"
+Lire choix
+	Si choix vaut 'O'
+	Alors
+	x <-- r
+	Ecrire "Saisissez un nombe "
+	Lire nombre
+	y <-- nombre
+	r <-- (x+y)/2
+	Fin si
+Ecrire "La moyenne est de ", r
+jusqua choix vaut 'O'
+Fin
