@@ -1,0 +1,38 @@
+Entier nombreAleatoire, nbr, nbrEssai
+Booleen ok, erreur
+Chaine Scan
+Scanner sc
+Début
+sc <-- création scanner et initialise avec System.in
+nombreAleatoire <-- random * 99
+Affiche "entrez un nombre entre 0 et 100"
+Faire
+	erreur <-- false
+	Saisie nbr
+	try
+		nbr <-- Appel fonction convertir en chaine sur Scan
+	end try
+	catch exeption nfe
+	Affiche "Veuillez entrez un nombre !!!"
+	erreur <-- true
+	end catch
+	si erreur = false
+		Si nombreAleatoire différent de nbr
+		Alors
+			Si nbr est plus petit que nombreAleatoire
+				Alors Affiche "C'est moins"
+				Sinon Affiche "C'est plus"	
+			Incrément nbrEssai
+			Fin si
+		Sinon
+		Affiche "Le bon nombre est bien "
+		Affiche nombreAleatoire
+		Affiche "Vous avez trouvez en "
+		Affiche nbrEssai
+		Affiche "coup"
+		ok <-- true
+		Fin si
+	Fin si
+Tant que ok différent de true
+Appel Fermeture sc
+Fin
