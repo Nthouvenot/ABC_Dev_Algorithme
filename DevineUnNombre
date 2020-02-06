@@ -5,15 +5,15 @@ Scanner sc
 Début
 sc <-- création scanner et initialise avec System.in
 nombreAleatoire <-- random * 99
-Affiche "entrez un nombre entre 0 et 100"
+Ecrire "entrez un nombre entre 0 et 100"
 Faire
 	erreur <-- false
-	Saisie nbr
+	Lire nbr
 	try
 		nbr <-- Appel fonction convertir en chaine sur Scan
 	end try
 	catch exeption nfe
-	Affiche "Veuillez entrez un nombre !!!"
+	Ecrire "Veuillez entrez un nombre !!!"
 	erreur <-- true
 	end catch
 	si erreur = false
@@ -25,11 +25,8 @@ Faire
 			Incrément nbrEssai
 			Fin si
 		Sinon
-		Affiche "Le bon nombre est bien "
-		Affiche nombreAleatoire
-		Affiche "Vous avez trouvez en "
-		Affiche nbrEssai
-		Affiche "coup"
+		Ecrire "Le bon nombre est bien " + nombreAleatoire
+		Ecrire "Vous avez trouvez en " + nbrEssai + "coup"
 		ok <-- true
 		Fin si
 	Fin si
